@@ -1,0 +1,15 @@
+﻿<!-- Index.cshtml -->
+@{
+    string pageTitle = ViewData["Title"] as string;
+    string content = ViewData["Content"] as string;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@pageTitle</title>
+</head>
+<body>
+    <div>@Html.Raw(content)</div>
+</body>
+</html>
